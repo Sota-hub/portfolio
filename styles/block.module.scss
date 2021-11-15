@@ -1,0 +1,18 @@
+@mixin block_basics {
+  width: 15em;
+  text-align: center;
+}
+
+.block_container {
+  @include block_basics;
+  margin-bottom: 2em;
+}
+
+.link_container {
+  @include block_basics;
+  height: 15em;
+  line-height: 15em;
+  list-style-type: none;
+  background-color: #0f0;
+  border-radius: 0.5em;
+}
