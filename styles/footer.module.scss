@@ -1,5 +1,11 @@
 .footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #000;
+}
+
+.footer_list_container {
   padding: 2em 0 2em 3em;
 }
 
@@ -10,5 +16,17 @@
   list-style-type: none;
 }
 
-.footer_logo {
+.footer_image_container {
+  display: flex;
+  align-items: center;
+  padding: 3em 1.5em 0 0;
+}
+
+.image_style {
+  padding: 0.5em;
+  border-radius: 6px;
+  margin: 0.25em;
+  &:last-child {
+    background-color: #fff;
+  }
 }

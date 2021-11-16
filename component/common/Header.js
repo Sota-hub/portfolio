@@ -8,36 +8,44 @@ const Header = () => {
 
   return (
     <header className="container">
-      <ul className={classes.grid_container}>
-        <li
-          className={`${classes.grid_items} ${
-            router.pathname === "/" && classes.active
-          }`}
-        >
-          <Link href="/">Home</Link>
-        </li>
-        <li
-          className={`${classes.grid_items} ${
-            router.pathname === "/about" && classes.active
-          }`}
-        >
-          <Link href="/about">About</Link>
-        </li>
-        <li
-          className={`${classes.grid_items} ${
-            router.pathname === "/works" && classes.active
-          }`}
-        >
-          <Link href="/works">Works</Link>
-        </li>
-        <li
-          className={`${classes.grid_items} ${
-            router.pathname === "/contact" && classes.active
-          }`}
-        >
-          <Link href="/contact">Contact</Link>
-        </li>
-      </ul>
+      <div className={classes.grid_container}>
+        <Link href="/">
+          <a
+            className={`${classes.grid_items} ${
+              router.pathname === "/" && classes.active
+            }`}
+          >
+            Home
+          </a>
+        </Link>
+        <Link href="/about">
+          <a
+            className={`${classes.grid_items} ${
+              router.pathname === "/about" && classes.active
+            }`}
+          >
+            About
+          </a>
+        </Link>
+        <Link href="/works">
+          <a
+            className={`${classes.grid_items} ${
+              router.pathname === "/works" && classes.active
+            }`}
+          >
+            Works
+          </a>
+        </Link>
+        <Link href="/contact">
+          <a
+            className={`${classes.grid_items} ${
+              router.pathname === "/contact" && classes.active
+            }`}
+          >
+            Contact
+          </a>
+        </Link>
+      </div>
     </header>
   );
 };

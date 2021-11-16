@@ -1,0 +1,49 @@
+// ===== Applied to GuideList.js =====
+@mixin guideList_basic_style {
+  width: 15em;
+  text-align: center;
+}
+
+.guideList_container {
+  @include guideList_basic_style;
+  margin-bottom: 2em;
+  list-style-type: none;
+}
+
+.link_container {
+  @include guideList_basic_style;
+  height: 15em;
+  margin-bottom: 3em;
+}
+
+.message_style {
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 0.5em;
+}
+// ==================================
+
+// ====== Applied to Guide.js ======
+.guide_container {
+  position: relative;
+  display: grid;
+  height: 100%;
+}
+
+.guide_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.guide_background_image {
+  opacity: 0.1;
+  &:hover {
+    opacity: 1;
+  }
+}
+// =================================
