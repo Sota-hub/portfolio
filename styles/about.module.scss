@@ -1,0 +1,17 @@
+.skills_container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  width: 80%;
+}
+
+.skill_align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.text_style {
+  margin-top: 0.25em;
+  text-align: center;
+}
