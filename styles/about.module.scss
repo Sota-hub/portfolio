@@ -1,8 +1,16 @@
+@import "/styles/home.module.scss";
+
 .skills_container {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
   width: 80%;
-  margin: 2em 0;
+  margin: 3em 0;
+  @media screen and (min-width: $tablet_screen) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media screen and (min-width: $desktop_screen) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .skill_align {
