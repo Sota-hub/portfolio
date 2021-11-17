@@ -7,7 +7,7 @@ const Guide = ({ title, path }) => {
     <div className={classes.guide_container}>
       <h2 className={classes.guide_title}>{title}</h2>
       <div className={classes.guide_background_image}>
-        <Image src={path} alt="about me link" layout="fill" />
+        <Image src={path} alt="about me link" layout="fill" priority />
       </div>
     </div>
   );
