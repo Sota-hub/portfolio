@@ -21,30 +21,26 @@ const Footer = () => {
         </li>
       </ul>
       <div className={classes.footer_image_container}>
-        <a
-          href="https://github.com/Sota-hub"
-          target="blank"
-          className={classes.image_style}
-        >
-          <Image
-            src="/GitHub-icon.png"
-            alt="GitHub link"
-            width="35%"
-            height="35%"
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/sota-sasaki-825478226/"
-          target="blank"
-          className={classes.image_style}
-        >
-          <Image
-            src="/LinkedIn-icon.png"
-            alt="LinkedIn link"
-            width="20%"
-            height="20%"
-          />
-        </a>
+        <Link href="https://github.com/Sota-hub">
+          <a target="blank" className={classes.image_style}>
+            <Image
+              src="/GitHub-icon.png"
+              alt="GitHub link"
+              width="35%"
+              height="35%"
+            />
+          </a>
+        </Link>
+        <Link href="https://www.linkedin.com/in/sota-sasaki-825478226/">
+          <a target="blank" className={classes.image_style}>
+            <Image
+              src="/LinkedIn-icon.png"
+              alt="LinkedIn link"
+              width="20%"
+              height="20%"
+            />
+          </a>
+        </Link>
       </div>
     </div>
   );

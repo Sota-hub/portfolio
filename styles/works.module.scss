@@ -1,0 +1,65 @@
+@mixin align_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin absolute_position($percent) {
+  position: absolute;
+  top: $percent;
+  transform: translateY(-50%);
+}
+
+@mixin box_style($padding, $bgColor, $color) {
+  padding: $padding;
+  background-color: $bgColor;
+  color: $color;
+}
+
+.WorkList_container {
+  margin-top: 2em;
+}
+
+.Work_container {
+  @include align_center();
+  position: relative;
+  width: 17em;
+  height: 22em;
+  margin-bottom: 3em;
+}
+
+.container_for_align {
+  @include align_center();
+}
+
+.language_container {
+  @include absolute_position(15%);
+}
+
+.language_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 0.5em;
+  row-gap: 0.5em;
+  text-align: center;
+}
+
+.language_style {
+  @include box_style(0.5em, rgba(255, 255, 255, 0.75), #000);
+  border: 1px solid #000;
+}
+
+.title_style {
+  @include absolute_position(50%);
+}
+
+.description_style {
+  @include absolute_position(80%);
+  @include box_style(1em, rgba(0, 0, 0, 0.75), #fff);
+}
+
+.work_background_image {
+  opacity: 0.15;
+  z-index: -1;
+  border-radius: 8px;
+}
