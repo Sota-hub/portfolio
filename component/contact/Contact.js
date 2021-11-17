@@ -38,17 +38,17 @@ const Contact = () => {
         body: JSON.stringify(content),
       });
 
-      if (!response.ok) {
-        console.log(response);
+      if (response.status === 400) {
         throw new Error("Something went wrong...");
       }
 
       const data = await response.json();
       console.log(data);
+
       setIsSubmitted(true);
       reset();
-    } catch (e) {
-      console.log(e);
+    } catch (err) {
+      console.log(err);
     }
   };
 

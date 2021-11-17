@@ -1,31 +1,41 @@
 const nodemailer = require("nodemailer");
 require("dotenv").config();
 
-const password = process.env.PASSWORD;
+const host = process.env.MAIL_HOST;
+const port = process.env.MAIL_PORT;
+const address = process.env.MAIL_ADDRESS;
+const password = process.env.MAIL_PASSWORD;
 
 const mailer = (req, res) => {
-  // console.log(req.body);
-  const transporter = nodemailer.createTransport({
-    host: "gmail",
-    port: 587,
-    secure: true,
-    auth: {
-      user: "portfolioa288@gmail.com",
-      pass: password,
-    },
-  });
+  return new Promise((resolve, reject) => {
+    const transporter = nodemailer.createTransport({
+      host: host,
+      port: port,
+      secure: false,
+      auth: {
+        user: address,
+        pass: password,
+      },
+    });
 
-  const message = {
-    from: req.body.email,
-    to: "portfolioa288@gmail.com",
-    subject: `Message from ${req.body.name}`,
-    text: `${req.body.subject} | ${req.body.message} | from: ${req.body.email}`,
-    html: `<h2>${req.body.subject}<h2><div>${req.body.message}<div><p>from: ${req.body.email}</p>`,
-  };
+    const message = {
+      from: `${req.body.email} <${req.body.name}>`,
+      to: address,
+      subject: req.body.subject,
+      text: `${req.body.message} | from: ${req.body.email}`,
+      html: `<div>${req.body.message}<div><p>from: ${req.body.name}</p>`,
+    };
 
-  transporter.sendMail(message, (err, info) => {
-    if (err) res.status(400).send(err);
-    if (!err) res.status(200).send(info);
+    transporter.sendMail(message, (err, info) => {
+      if (err) {
+        console.log("Mail failed");
+        res.status(400).send(err);
+      }
+      if (!err) {
+        console.log("Your message was sent!");
+        res.status(200).send(info);
+      }
+    });
   });
 };
 
