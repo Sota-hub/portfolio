@@ -1,0 +1,44 @@
+.form_container {
+  width: 80%;
+  margin: 2em 0;
+}
+
+.input_group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.input_label {
+  margin-left: 6px;
+  font-weight: 100;
+}
+
+.input_field {
+  height: 2em;
+  font-size: 18px;
+  padding: 0 8px;
+  margin: 0.25em 0;
+  border: none;
+  border-bottom: 2px solid rgb(70, 70, 70);
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(120, 225, 210);
+  }
+}
+
+.message_style {
+  height: 6em;
+}
+
+.submit_style {
+  border: none;
+  padding: 2em 6em;
+  background-color: #000;
+  color: #fff;
+}
+
+.error_message_style {
+  color: #ea0027;
+  margin-top: 0.5em;
+}
