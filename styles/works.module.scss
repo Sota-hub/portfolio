@@ -44,6 +44,7 @@
 
 .language_container {
   @include absolute_position(15%);
+  @include decoration_on_image();
 }
 
 .language_grid {
@@ -61,6 +62,7 @@
 
 .title_style {
   @include absolute_position(50%);
+  @include decoration_on_image();
   @media screen and (min-width: $desktop_screen) {
     font-size: 26px;
   }
@@ -68,6 +70,7 @@
 
 .description_style {
   @include absolute_position(80%);
+  @include decoration_on_image();
   @include box_style(1em, rgba(0, 0, 0, 0.75), #fff);
 }
 
@@ -76,6 +79,10 @@
   width: 17em;
   height: 22em;
   opacity: 0.15;
-  z-index: -1;
   border-radius: 8px;
+  @media screen and (min-width: $desktop_screen) {
+    &:hover {
+      opacity: 1;
+    }
+  }
 }

@@ -9,6 +9,11 @@ $desktop_screen: 1024px;
   text-align: center;
 }
 
+@mixin decoration_on_image {
+  z-index: 1;
+  pointer-events: none;
+}
+
 .guideList_container {
   @include guideList_basic_style;
   list-style-type: none;
@@ -46,13 +51,12 @@ $desktop_screen: 1024px;
 }
 
 .guide_title {
+  @include decoration_on_image();
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  z-index: 1;
-  pointer-events: none;
   @media screen and (min-width: $desktop_screen) {
     font-size: 26px;
   }
