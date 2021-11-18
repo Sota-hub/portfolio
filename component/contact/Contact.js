@@ -47,6 +47,9 @@ const Contact = () => {
 
       setIsSubmitted(true);
       reset();
+      setTimeout(() => {
+        setIsSubmitted(false);
+      }, 3000);
     } catch (err) {
       console.log(err);
     }
@@ -54,7 +57,9 @@ const Contact = () => {
 
   return (
     <div className="container">
-      {isSubmitted && <p>Your message was sent!</p>}
+      {isSubmitted && (
+        <p className={classes.success_message}>Your message was sent!</p>
+      )}
       <form
         className={classes.form_container}
         onSubmit={handleSubmit(submitHandler)}

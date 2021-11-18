@@ -43,3 +43,13 @@
   color: #ea0027;
   margin-top: 0.5em;
 }
+
+.success_message {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5em;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #000;
+}
