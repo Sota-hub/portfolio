@@ -29,7 +29,7 @@ const Contact = () => {
 
   const submitHandler = async (content) => {
     try {
-      const response = await fetch("/pages/api/mailer", {
+      const response = await fetch("/api/mailer", {
         method: "POST",
         headers: {
           Accept: "application/json",
