@@ -39,8 +39,7 @@ const Contact = () => {
       });
 
       if (response.status === 400) {
-        // throw new Error("Something went wrong...");
-        throw new Error(response);
+        throw new Error("Something went wrong...");
       }
 
       const data = await response.json();
