@@ -15,7 +15,13 @@ const Work = ({ language, title, description, image, link }) => {
           <h2 className={classes.title_style}>{title}</h2>
           <div className={classes.description_style}>{description}</div>
           <div className={classes.work_background_image}>
-            <Image src={image} alt="pokemon battle" layout="fill" priority />
+            <Image
+              src={image}
+              alt="pokemon battle"
+              layout="fill"
+              // priority
+              quality={10}
+            />
           </div>
         </div>
       </div>

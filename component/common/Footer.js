@@ -28,6 +28,7 @@ const Footer = () => {
               alt="GitHub link"
               width="35%"
               height="35%"
+              quality={10}
             />
           </a>
         </Link>
@@ -38,6 +39,7 @@ const Footer = () => {
               alt="LinkedIn link"
               width="20%"
               height="20%"
+              quality={10}
             />
           </a>
         </Link>

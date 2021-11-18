@@ -11,7 +11,8 @@ const Guide = ({ title, path }) => {
           src={path}
           alt={`${title.toLowerCase()} link`}
           layout="fill"
-          priority
+          // priority
+          quality={10}
         />
       </div>
     </div>
