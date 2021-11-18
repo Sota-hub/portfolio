@@ -29,7 +29,7 @@ const Contact = () => {
 
   const submitHandler = async (content) => {
     try {
-      const response = await fetch("/api/mailer", {
+      const response = await fetch("/pages/api/mailer", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -39,7 +39,8 @@ const Contact = () => {
       });
 
       if (response.status === 400) {
-        throw new Error("Something went wrong...");
+        // throw new Error("Something went wrong...");
+        throw new Error(response);
       }
 
       const data = await response.json();
