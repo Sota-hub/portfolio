@@ -3,6 +3,7 @@ $box_shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
 
 $tablet_screen: 700px;
 $desktop_screen: 1024px;
+$hover_animation: opacity 0.3s ease-in-out;
 
 @mixin guideList_basic_style {
   width: 15em;
@@ -68,8 +69,10 @@ $desktop_screen: 1024px;
   height: 15em;
   opacity: 0.15;
   @media screen and (min-width: $desktop_screen) {
+    transition: $hover_animation;
     &:hover {
       opacity: 1;
+      transition: $hover_animation;
     }
   }
 }

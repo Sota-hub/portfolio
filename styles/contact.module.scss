@@ -52,4 +52,20 @@
   text-align: center;
   background-color: #fff;
   border: 1px solid #000;
+  animation: message_animation 3s forwards;
+}
+
+@keyframes message_animation {
+  0% {
+    transform: translateY(-100px);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
 }

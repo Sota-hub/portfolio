@@ -1,5 +1,7 @@
 @import "/styles/home.module.scss";
 
+$border_style: 1px solid #000;
+
 .header_container {
   @media screen and (min-width: $tablet_screen) {
     display: flex;
@@ -43,7 +45,26 @@
 
 .active {
   opacity: 0.3;
-  border: 1px solid #000;
-  border-bottom: none;
-  pointer-events: none;
+  animation: active_animation 0.8s forwards;
+}
+
+@keyframes active_animation {
+  25% {
+    border-left: $border_style;
+  }
+  50% {
+    border-left: $border_style;
+    border-top: $border_style;
+  }
+  75% {
+    border-left: $border_style;
+    border-top: $border_style;
+    border-right: $border_style;
+  }
+  100% {
+    border-left: $border_style;
+    border-top: $border_style;
+    border-right: $border_style;
+    border-bottom: none;
+  }
 }

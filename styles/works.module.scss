@@ -80,9 +80,12 @@
   height: 22em;
   opacity: 0.15;
   border-radius: 8px;
+  cursor: pointer;
   @media screen and (min-width: $desktop_screen) {
+    transition: $hover_animation;
     &:hover {
       opacity: 1;
+      transition: $hover_animation;
     }
   }
 }
