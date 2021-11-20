@@ -11,9 +11,9 @@ const FirstView = () => {
   return (
     <>
       <h1 className={classes.fist_view_style}>
+        Hello! <br />
         I&prime;m Sota Sasaki. <br />
-        I&prime;m into React and Next.js. <br />I can write the code anytime.{" "}
-        <br /> It&prime;s time to hire me
+        I&prime;m into React and Next.js! <br />I can write the code anytime.
       </h1>
       <div className="container" style={{ margin: "2em 0" }}>
         <Link href="https://github.com/Sota-hub">
