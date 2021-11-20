@@ -15,6 +15,13 @@ $hover_animation: opacity 0.3s ease-in-out;
   pointer-events: none;
 }
 
+@mixin button_style {
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 2em 3em;
+  color: #fff;
+}
+
 .first_view_container {
   margin: 2em 0 4em;
 }
@@ -22,6 +29,9 @@ $hover_animation: opacity 0.3s ease-in-out;
 .fist_view_style {
   text-align: center;
   line-height: 2.5em;
+  @media screen and (min-width: $laptop_screen) {
+    font-size: 30px;
+  }
 }
 
 .arrow_style {
@@ -112,15 +122,59 @@ $hover_animation: opacity 0.3s ease-in-out;
   top: 0;
   left: 0;
   background-color: #000;
+  z-index: 2;
+  @media screen and (min-width: $laptop_screen) {
+  }
 }
 
-.modal_container {
+.resume_frame {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @media screen and (min-width: $laptop_screen) {
+    width: 80%;
+  }
 }
 
-.modal_style {
-  border: 1px solid #000;
+.resume_container {
+  transform: scale(0.5);
+  @media screen and (min-width: $tablet_screen) {
+    transform: scale(0.7);
+  }
+  @media screen and (min-width: $laptop_screen) {
+    display: flex;
+    justify-content: space-between;
+    transform: scale(0.9);
+  }
+}
+
+.button_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+  @media screen and (min-width: $laptop_screen) {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+.download_button {
+  font-size: 28px;
+  @include button_style();
+  @media screen and (min-width: $laptop_screen) {
+    font-size: larger;
+    margin-bottom: 1em;
+  }
+}
+
+.close_button {
+  font-size: 28px;
+  @include button_style();
+  padding: 2em 3.7em;
+  cursor: pointer;
+  @media screen and (min-width: $laptop_screen) {
+    padding: 2em 3em;
+    font-size: larger;
+  }
 }

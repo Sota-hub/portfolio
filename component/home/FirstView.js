@@ -51,13 +51,7 @@ const FirstView = () => {
         &darr; <span style={{ fontSize: "10px" }}>please scroll down</span>
       </p>
       {/* Modal */}
-      {isModal && (
-        <div className={classes.overlay}>
-          <div className={classes.modal_container}>
-            <ResumeModal />
-          </div>
-        </div>
-      )}
+      {isModal && <ResumeModal setIsModal={setIsModal} />}
     </>
   );
 };
