@@ -20,7 +20,7 @@
 
 .WorkList_container {
   margin: 3em;
-  @media screen and (min-width: $desktop_screen) {
+  @media screen and (min-width: $laptop_screen) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -32,7 +32,7 @@
   height: 22em;
   margin-bottom: 3em;
   box-shadow: $box_shadow;
-  @media screen and (min-width: $desktop_screen) {
+  @media screen and (min-width: $laptop_screen) {
     margin: 0 2em 1em;
   }
 }
@@ -63,7 +63,7 @@
 .title_style {
   @include absolute_position(50%);
   @include decoration_on_image();
-  @media screen and (min-width: $desktop_screen) {
+  @media screen and (min-width: $laptop_screen) {
     font-size: 26px;
   }
 }
@@ -81,7 +81,7 @@
   opacity: 0.15;
   border-radius: 8px;
   cursor: pointer;
-  @media screen and (min-width: $desktop_screen) {
+  @media screen and (min-width: $laptop_screen) {
     transition: $hover_animation;
     &:hover {
       opacity: 1;

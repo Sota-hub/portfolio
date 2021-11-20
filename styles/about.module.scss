@@ -8,7 +8,7 @@
   @media screen and (min-width: $tablet_screen) {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  @media screen and (min-width: $desktop_screen) {
+  @media screen and (min-width: $laptop_screen) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

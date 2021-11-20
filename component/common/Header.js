@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header>
       <div className={`container ${classes.header_container}`}>
-        <h2 className={classes.header_icon}>portfolio</h2>
+        <h2 className={classes.header_icon}>{"Sota's portfolio"}</h2>
         <div className={classes.grid_container}>
           <Link href="/">
             <a
