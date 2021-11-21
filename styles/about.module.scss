@@ -4,16 +4,22 @@
   margin-bottom: 0.75em;
 }
 
+.message {
+  text-align: center;
+  margin-top: 2em;
+}
+
 .skills_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 70%;
+  width: 80%;
   margin: 3em auto;
   @media screen and (min-width: $tablet_screen) {
     grid-template-columns: 1fr 1fr 1fr;
   }
   @media screen and (min-width: $laptop_screen) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 60%;
   }
 }
 
@@ -36,15 +42,18 @@
 }
 
 .history_container {
-  border-bottom: 1px solid #000;
+  position: relative;
   padding: 2em;
+  &:last-child > div {
+    border-bottom: none;
+  }
+  @media screen and (min-width: $laptop_screen) {
+    border-left: $border_style;
+  }
 }
 
 .history_period {
   margin-bottom: 1em;
-}
-
-.history_description {
 }
 
 .history_title {
@@ -53,16 +62,15 @@
 
 .history_describe {
   @include around_title();
+  font-size: 20px;
 }
 
 .history_points {
-  // list-style-type: none;
   margin-left: 2em;
 }
 
 .history_point {
   margin-bottom: 0.1em;
-  // text-align: right;
   font-size: 16px;
 }
 
@@ -73,6 +81,7 @@
 .history_image {
   position: relative;
   margin: 2em 0;
+  width: 20em;
   height: 20em;
 }
 
@@ -90,5 +99,23 @@
   max-width: 400px;
   & > p {
     margin-bottom: 6px;
+  }
+}
+
+.history_bottom {
+  position: relative;
+  border-bottom: $border_style;
+  margin-top: 3rem;
+}
+
+.line_dot {
+  @media screen and (min-width: $laptop_screen) {
+    position: absolute;
+    top: 42px;
+    left: -11px;
+    height: 20px;
+    width: 20px;
+    background-color: #aaa;
+    border-radius: 50%;
   }
 }

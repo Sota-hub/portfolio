@@ -57,7 +57,7 @@
 
 .language_style {
   @include box_style(0.5em, rgba(255, 255, 255, 0.75), #000);
-  border: 1px solid #000;
+  border: $border_style;
 }
 
 .title_style {

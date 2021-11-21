@@ -4,6 +4,7 @@ $box_shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
 $tablet_screen: 700px;
 $laptop_screen: 1024px;
 $hover_animation: opacity 0.3s ease-in-out;
+$border_style: 1px solid #000;
 
 @mixin guideList_basic_style {
   width: 15em;
@@ -45,7 +46,7 @@ $hover_animation: opacity 0.3s ease-in-out;
 }
 
 .first_view_resume {
-  border: 1px solid #000;
+  border: $border_style;
   padding: 1em;
   width: 50%;
   text-align: center;

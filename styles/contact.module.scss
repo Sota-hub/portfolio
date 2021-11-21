@@ -1,3 +1,5 @@
+@import "/styles/home.module.scss";
+
 .contact_description {
   margin-bottom: 4em;
   text-align: center;
@@ -5,7 +7,7 @@
 
 .form_container {
   width: 80%;
-  margin: 3em 2em 5em;
+  margin: 2em 2em 5em;
   max-width: 600px;
 }
 
@@ -56,7 +58,7 @@
   padding: 1.5em;
   text-align: center;
   background-color: #fff;
-  border: 1px solid #000;
+  border: $border_style;
   animation: message_animation 3s forwards;
 }
 

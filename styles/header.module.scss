@@ -1,7 +1,5 @@
 @import "/styles/home.module.scss";
 
-$border_style: 1px solid #000;
-
 .header_container {
   @media screen and (min-width: $laptop_screen) {
     display: flex;
@@ -34,7 +32,7 @@ $border_style: 1px solid #000;
 .grid_items {
   text-align: center;
   padding: 0.5em;
-  border-bottom: 1px solid #000;
+  border-bottom: $border_style;
   &:first-child {
     padding-left: 0.5em;
   }

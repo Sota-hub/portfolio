@@ -8,7 +8,7 @@ const History = ({ period, description }) => {
   return (
     <div className={classes.history_container}>
       <p className={classes.history_period}>{period}</p>
-      <div className={classes.history_description}>
+      <div>
         <h2 className={classes.history_title}>{description.title}</h2>
         <p className={classes.history_describe}>{description.describe}</p>
         <ul className={classes.history_points}>
@@ -35,6 +35,8 @@ const History = ({ period, description }) => {
           </div>
         )}
       </div>
+      <div className={classes.history_bottom}></div>
+      <span className={classes.line_dot}></span>
     </div>
   );
 };
