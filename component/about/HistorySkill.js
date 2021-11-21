@@ -1,4 +1,5 @@
 import Skill from "./Skill";
+import History from "./History";
 
 import classes from "../../styles/about.module.scss";
 
@@ -65,9 +66,40 @@ const skills = [
   },
 ];
 
-const SkillList = () => {
+const histories = [
+  {
+    id: 1,
+    period: "- 2020",
+    description: {
+      title: "Before coming to Vancouver",
+      describe: "I was a university student and a part-timer",
+      points: [
+        "Salesperson in grocery store",
+        "Salesperson in Japanese style pub",
+        "employee in Japanese style hotel",
+        "Website content writer",
+        "I've been specializing sociology",
+      ],
+      image: "",
+    },
+  },
+];
+
+const HistorySkill = () => {
   return (
-    <div className="container">
+    <div>
+      <div className={classes.history_frame}>
+        <div>
+          {histories.map((history) => (
+            <History
+              key={`history-${history.id}`}
+              id={history.id}
+              period={history.period}
+              description={history.description}
+            />
+          ))}
+        </div>
+      </div>
       <div className={classes.skills_container}>
         {skills.map((skill) => (
           <Skill
@@ -81,4 +113,4 @@ const SkillList = () => {
   );
 };
 
-export default SkillList;
+export default HistorySkill;

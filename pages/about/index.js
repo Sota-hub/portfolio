@@ -1,6 +1,6 @@
 import Header from "../../component/common/Header";
 import Footer from "../../component/common/Footer";
-import SkillList from "../../component/about/SkillList";
+import HistorySkill from "../../component/about/HistorySkill";
 import Head from "next/head";
 
 const AboutPage = () => {
@@ -10,7 +10,7 @@ const AboutPage = () => {
         <title>Sota&prime;s portfolio - About</title>
       </Head>
       <Header />
-      <SkillList />
+      <HistorySkill />
       <Footer />
     </>
   );

@@ -1,10 +1,14 @@
 @import "/styles/home.module.scss";
 
+@mixin around_title {
+  margin-bottom: 0.75em;
+}
+
 .skills_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 80%;
-  margin: 3em 0;
+  width: 70%;
+  margin: 3em auto;
   @media screen and (min-width: $tablet_screen) {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -23,4 +27,45 @@
 .text_style {
   margin-top: 0.25em;
   text-align: center;
+}
+
+.history_frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.history_container {
+  border-bottom: 1px solid #000;
+  padding: 2em;
+}
+
+.history_period {
+  margin-bottom: 1.5em;
+}
+
+.history_description {
+}
+
+.history_title {
+  @include around_title();
+}
+
+.history_describe {
+  @include around_title();
+}
+
+.history_points {
+  list-style-type: none;
+}
+
+.history_point {
+  margin-bottom: 0.1em;
+  text-align: right;
+}
+
+.history_image {
+}
+
+.history_button {
 }
