@@ -41,7 +41,7 @@
 }
 
 .history_period {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
 .history_description {
@@ -56,16 +56,39 @@
 }
 
 .history_points {
-  list-style-type: none;
+  // list-style-type: none;
+  margin-left: 2em;
 }
 
 .history_point {
   margin-bottom: 0.1em;
-  text-align: right;
+  // text-align: right;
+  font-size: 16px;
+}
+
+.work_container {
+  position: relative;
 }
 
 .history_image {
+  position: relative;
+  margin: 2em 0;
+  height: 20em;
 }
 
 .history_button {
+  position: absolute;
+  top: 22em;
+  background-color: #000;
+  color: #fff;
+  padding: 1em 4em;
+  cursor: pointer;
+}
+
+.history_language {
+  margin-top: 7em;
+  max-width: 400px;
+  & > p {
+    margin-bottom: 6px;
+  }
 }

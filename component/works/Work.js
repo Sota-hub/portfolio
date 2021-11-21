@@ -7,7 +7,7 @@ import classes from "../../styles/works.module.scss";
 const Work = ({ language, title, description, image, link }) => {
   return (
     <Link href={link} passHref>
-      <div className={classes.Work_container}>
+      <a target="blank" className={classes.Work_container}>
         <div className={classes.container_for_align}>
           <div className={classes.language_container}>
             <Language language={language} />
@@ -17,14 +17,14 @@ const Work = ({ language, title, description, image, link }) => {
           <div className={classes.work_background_image}>
             <Image
               src={image}
-              alt="pokemon battle"
+              alt={title}
               layout="fill"
               // priority
               quality={10}
             />
           </div>
         </div>
-      </div>
+      </a>
     </Link>
   );
 };

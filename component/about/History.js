@@ -1,6 +1,8 @@
+import Link from "next/link";
 import Image from "next/image";
 
 import classes from "../../styles/about.module.scss";
+import Language from "../works/Language";
 
 const History = ({ period, description }) => {
   return (
@@ -17,12 +19,20 @@ const History = ({ period, description }) => {
           ))}
         </ul>
         {description.image && (
-          <>
+          <div className={classes.work_container}>
             <div className={classes.history_image}>
-              <Image src={description.image} alt="image" />
+              <Image src={description.image} alt="image" layout="fill" />
             </div>
-            <span className={classes.history_button}>Visit</span>
-          </>
+            <Link href={description.link}>
+              <a target="blank" className={classes.history_button}>
+                Visit
+              </a>
+            </Link>
+            <div className={classes.history_language}>
+              <p>Languages</p>
+              <Language language={description.language} />
+            </div>
+          </div>
         )}
       </div>
     </div>
