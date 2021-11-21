@@ -64,6 +64,10 @@ const Contact = () => {
         className={classes.form_container}
         onSubmit={handleSubmit(submitHandler)}
       >
+        <h2 className={classes.contact_description}>
+          If you are wondering about me, <br /> please feel free to ask me
+          everything.
+        </h2>
         <div className={classes.input_group}>
           <label htmlFor="name" className={classes.input_label}>
             Name
