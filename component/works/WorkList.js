@@ -19,15 +19,20 @@ const works = [
 const WorkList = () => {
   return (
     <div className="container">
-      <div className={classes.WorkList_container}>
-        {works.map((work) => (
-          <Work
-            key={`work-${work.id}`}
-            title={work.title}
-            image={work.image}
-            params={work.params}
-          />
-        ))}
+      <div>
+        <h2 className={classes.WorkList_title}>
+          These are my works! Please take a look them.
+        </h2>
+        <div className={classes.WorkList_container}>
+          {works.map((work) => (
+            <Work
+              key={`work-${work.id}`}
+              title={work.title}
+              image={work.image}
+              params={work.params}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

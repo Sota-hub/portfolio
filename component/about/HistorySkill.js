@@ -136,7 +136,7 @@ const histories = [
 const HistorySkill = () => {
   return (
     <div>
-      <h2 className={classes.message}>Please see my history below.</h2>
+      <h2 className={classes.message}>Please take a look my history below.</h2>
       <div className={classes.history_frame}>
         <div>
           {histories.map((history) => (
@@ -149,7 +149,7 @@ const HistorySkill = () => {
           ))}
         </div>
       </div>
-      <h2 className={classes.message}>Please see my skills below. </h2>
+      <h2 className={classes.message}>Please take a look my skills below. </h2>
       <div className={classes.skills_container}>
         {skills.map((skill) => (
           <Skill
