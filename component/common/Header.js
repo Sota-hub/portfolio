@@ -32,7 +32,10 @@ const Header = () => {
           <Link href="/works">
             <a
               className={`${classes.grid_items} ${
-                router.pathname === "/works" && classes.active
+                (router.pathname === "/works" ||
+                  router.pathname === "/works/pokemon" ||
+                  router.pathname === "/works/bestfood") &&
+                classes.active
               }`}
             >
               Works

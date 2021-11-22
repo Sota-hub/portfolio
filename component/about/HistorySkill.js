@@ -106,7 +106,7 @@ const histories = [
     description: {
       title: "Pokemon Battle App",
       describe:
-        "This app is able to play Pokemon on browser. I created this app with a few people",
+        "This app is able to play Pokemon on the browser. I created this app with a few people",
       points: ["Choose pokemon", "Decide move", "Change Pokemon", "Use Item"],
       // information for my work
       image: "/aboutMe.jpg",

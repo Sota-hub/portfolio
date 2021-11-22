@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import classes from "../../styles/about.module.scss";
-import Language from "../works/Language";
+import Language from "../about/Language";
 
 const History = ({ period, description }) => {
   return (

@@ -1,4 +1,4 @@
-import classes from "../../styles/works.module.scss";
+import classes from "../../styles/about.module.scss";
 
 const Language = ({ language }) => {
   return (
