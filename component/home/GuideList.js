@@ -16,9 +16,7 @@ const GuideList = () => {
             <p className={classes.message_style}>Are you interested in me?</p>
             <li className={classes.link_container}>
               <Link href="/about" passHref>
-                <a>
-                  <Guide title="ABOUT ME" path="/aboutMe.jpg" />
-                </a>
+                <Guide title="ABOUT ME" path="/aboutMe.jpg" />
               </Link>
             </li>
           </div>
@@ -28,9 +26,7 @@ const GuideList = () => {
             </p>
             <li className={classes.link_container}>
               <Link href="/works" passHref>
-                <a>
-                  <Guide title="WORKS" path="/works.jpg" />
-                </a>
+                <Guide title="WORKS" path="/works.jpg" />
               </Link>
             </li>
           </div>
@@ -40,9 +36,7 @@ const GuideList = () => {
             </p>
             <li className={classes.link_container}>
               <Link href="/contact" passHref>
-                <a>
-                  <Guide title="CONTACT" path="/contact.jpg" />
-                </a>
+                <Guide title="CONTACT" path="/contact.jpg" />
               </Link>
             </li>
           </div>

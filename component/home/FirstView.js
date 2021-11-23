@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
 
 import ResumeModal from "./ResumeModal";
@@ -16,28 +15,32 @@ const FirstView = () => {
         I&prime;m into React and Next.js! <br />I can write the code anytime.
       </h1>
       <div className="container" style={{ margin: "2em 0" }}>
-        <Link href="https://github.com/Sota-hub">
-          <a target="blank" className={classes.first_view_icon}>
-            <Image
-              src="/github.png"
-              alt="GitHub link"
-              width="35%"
-              height="35%"
-              quality={10}
-            />
-          </a>
-        </Link>
-        <Link href="https://www.linkedin.com/in/sota-sasaki-825478226/">
-          <a target="blank" className={classes.first_view_icon}>
-            <Image
-              src="/linkedin.png"
-              alt="LinkedIn link"
-              width="35%"
-              height="35%"
-              quality={10}
-            />
-          </a>
-        </Link>
+        <a
+          href="https://github.com/Sota-hub"
+          target="blank"
+          className={classes.first_view_icon}
+        >
+          <Image
+            src="/github.png"
+            alt="GitHub link"
+            width="35%"
+            height="35%"
+            quality={10}
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/sota-sasaki-825478226/"
+          target="blank"
+          className={classes.first_view_icon}
+        >
+          <Image
+            src="/linkedin.png"
+            alt="LinkedIn link"
+            width="35%"
+            height="35%"
+            quality={10}
+          />
+        </a>
       </div>
       <div className="container">
         <span

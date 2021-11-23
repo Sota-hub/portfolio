@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import Header from "../../component/common/Header";
 import Footer from "../../component/common/Footer";
@@ -26,11 +25,9 @@ const WorkDetail = ({ data }) => {
               </div>
             ))}
           </div>
-          <Link href={data.link}>
-            <a target="blank" className={classes.detail_link}>
-              Visit
-            </a>
-          </Link>
+          <a href={data.link} target="blank" className={classes.detail_link}>
+            Visit
+          </a>
           <p className={classes.detail_language}>languages</p>
           <Language language={data.language} />
         </div>
