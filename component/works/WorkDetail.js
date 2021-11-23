@@ -4,7 +4,6 @@ import Header from "../../component/common/Header";
 import Footer from "../../component/common/Footer";
 import Language from "../../component/about/Language";
 import classes from "../../styles/works.module.scss";
-import image from "next/image";
 
 const WorkDetail = ({ data }) => {
   return (
@@ -17,11 +16,7 @@ const WorkDetail = ({ data }) => {
           <div className={classes.detail_image_container}>
             {data.image?.map((img, index) => (
               <div key={`image-${index}`} className={classes.detail_image}>
-                <Image
-                  src={img}
-                  alt={`Pokemon Battle App-${index}`}
-                  layout="fill"
-                />
+                <Image src={img} alt={`Pokemon Battle App-${index}`} />
               </div>
             ))}
           </div>

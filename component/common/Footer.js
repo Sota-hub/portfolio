@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import GitHubIcon from "../../public/GitHub-icon.png";
+import LinkedInIcon from "../../public/LinkedIn-icon.png";
 
 import classes from "../../styles/footer.module.scss";
 
@@ -27,7 +29,7 @@ const Footer = () => {
           className={classes.image_style}
         >
           <Image
-            src="/GitHub-icon.png"
+            src={GitHubIcon}
             alt="GitHub link"
             width="35%"
             height="35%"
@@ -40,7 +42,7 @@ const Footer = () => {
           className={classes.image_style}
         >
           <Image
-            src="/LinkedIn-icon.png"
+            src={LinkedInIcon}
             alt="LinkedIn link"
             width="20%"
             height="20%"

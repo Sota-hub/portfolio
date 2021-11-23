@@ -1,3 +1,5 @@
+import AboutMe from "../../public/aboutMe.jpg";
+
 import Work from "./Work";
 import classes from "../../styles/works.module.scss";
 
@@ -5,13 +7,13 @@ const works = [
   {
     id: 1,
     title: "Pokemon Battle",
-    image: "/aboutMe.jpg",
+    image: AboutMe,
     params: "/pokemon",
   },
   {
     id: 2,
     title: "Meal Menu",
-    image: "/works.jpg",
+    image: AboutMe,
     params: "/bestfood",
   },
 ];

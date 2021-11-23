@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
+import GitHubIcon from "../../public/github.png";
+import LinkedInIcon from "../../public/linkedin.png";
 
 import ResumeModal from "./ResumeModal";
 import classes from "../../styles/home.module.scss";
@@ -20,26 +22,14 @@ const FirstView = () => {
           target="blank"
           className={classes.first_view_icon}
         >
-          <Image
-            src="/github.png"
-            alt="GitHub link"
-            width="35%"
-            height="35%"
-            quality={10}
-          />
+          <Image src={GitHubIcon} alt="GitHub link" quality={10} />
         </a>
         <a
           href="https://www.linkedin.com/in/sota-sasaki-825478226/"
           target="blank"
           className={classes.first_view_icon}
         >
-          <Image
-            src="/linkedin.png"
-            alt="LinkedIn link"
-            width="35%"
-            height="35%"
-            quality={10}
-          />
+          <Image src={LinkedInIcon} alt="LinkedIn link" quality={10} />
         </a>
       </div>
       <div className="container">

@@ -1,68 +1,82 @@
+import HTML from "../../public/html-5.png";
+import CSS from "../../public/css-3.png";
+import JavaScript from "../../public/javascript.png";
+import Git from "../../public/git.png";
+import GitHub from "../../public/github.png";
+import Sass from "../../public/sass.png";
+import React from "../../public/react.png";
+import Redux from "../../public/redux.png";
+import Next from "../../public/nextjs.png";
+import Node from "../../public/nodejs.png";
+import Mongo from "../../public/mongodb.png";
+import MySQL from "../../public/mysql.png";
+
+import workPic from "../../public/aboutMe.jpg";
+
 import Skill from "./Skill";
 import History from "./History";
-
 import classes from "../../styles/about.module.scss";
 
 const skills = [
   {
     id: 1,
     name: "HTML",
-    source: "/html-5.png",
+    source: HTML,
   },
   {
     id: 2,
     name: "CSS",
-    source: "/css-3.png",
+    source: CSS,
   },
   {
     id: 3,
     name: "JavaScript",
-    source: "/javascript.png",
+    source: JavaScript,
   },
   {
     id: 4,
     name: "Git",
-    source: "/git.png",
+    source: Git,
   },
   {
     id: 5,
     name: "GitHub",
-    source: "/github.png",
+    source: GitHub,
   },
   {
     id: 6,
     name: "Sass",
-    source: "/sass.png",
+    source: Sass,
   },
   {
     id: 7,
     name: "React",
-    source: "/react.png",
+    source: React,
   },
   {
     id: 8,
     name: "Redux",
-    source: "/redux.png",
+    source: Redux,
   },
   {
     id: 9,
     name: "Next.js",
-    source: "/nextjs.png",
+    source: Next,
   },
   {
     id: 10,
     name: "Node.js",
-    source: "/nodejs.png",
+    source: Node,
   },
   {
     id: 11,
     name: "MongoDB",
-    source: "/mongodb.png",
+    source: Mongo,
   },
   {
     id: 12,
     name: "MySQL",
-    source: "/mysql.png",
+    source: MySQL,
   },
 ];
 
@@ -109,7 +123,7 @@ const histories = [
         "This app is able to play Pokemon on the browser. I created this app with a few people",
       points: ["Choose pokemon", "Decide move", "Change Pokemon", "Use Item"],
       // information for my work
-      image: "/aboutMe.jpg",
+      image: workPic,
       language: ["React", "Redux", "JS"],
       link: "https://poke-battle.netlify.app/",
     },
@@ -126,7 +140,7 @@ const histories = [
         "I'm going to create an actual restaurants menu by user information (dish name, location, price, etc...)",
       ],
       // information for my work
-      image: "/aboutMe.jpg",
+      image: workPic,
       language: ["Next.js", "Node.js", "MySQL"],
       link: "https://poke-battle.netlify.app/",
     },

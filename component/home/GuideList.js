@@ -1,4 +1,7 @@
 import Link from "next/link";
+import AboutMe from "../../public/aboutMe.jpg";
+import Works from "../../public/works.jpg";
+import Contact from "../../public/contact.jpg";
 
 import FirstView from "./FirstView";
 import Guide from "./Guide";
@@ -16,7 +19,7 @@ const GuideList = () => {
             <p className={classes.message_style}>Are you interested in me?</p>
             <li className={classes.link_container}>
               <Link href="/about" passHref>
-                <Guide title="ABOUT ME" path="/aboutMe.jpg" />
+                <Guide title="ABOUT ME" path={AboutMe} />
               </Link>
             </li>
           </div>
@@ -26,7 +29,7 @@ const GuideList = () => {
             </p>
             <li className={classes.link_container}>
               <Link href="/works" passHref>
-                <Guide title="WORKS" path="/works.jpg" />
+                <Guide title="WORKS" path={Works} />
               </Link>
             </li>
           </div>
@@ -36,7 +39,7 @@ const GuideList = () => {
             </p>
             <li className={classes.link_container}>
               <Link href="/contact" passHref>
-                <Guide title="CONTACT" path="/contact.jpg" />
+                <Guide title="CONTACT" path={Contact} />
               </Link>
             </li>
           </div>

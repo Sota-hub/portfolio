@@ -30,6 +30,11 @@
   margin-bottom: 2em;
 }
 
+.skill_image {
+  width: 100px;
+  height: 100px;
+}
+
 .text_style {
   margin-top: 0.25em;
   text-align: center;
@@ -68,6 +73,8 @@
   }
   @media screen and (min-width: $laptop_screen) {
     border-left: $border_style;
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -93,15 +100,12 @@
   font-size: 16px;
 }
 
-.work_container {
-  position: relative;
-}
-
 .history_image {
-  position: relative;
+  display: block;
   margin: 2em 0;
-  width: 20em;
-  height: 20em;
+  @media screen and (min-width: $laptop_screen) {
+    max-width: 60%;
+  }
 }
 
 .history_button {
@@ -123,7 +127,6 @@
 }
 
 .history_bottom {
-  position: relative;
   border-bottom: $border_style;
   margin-top: 3rem;
 }

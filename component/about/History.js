@@ -3,7 +3,7 @@ import Image from "next/image";
 import classes from "../../styles/about.module.scss";
 import Language from "../about/Language";
 
-const History = ({ period, description }) => {
+const History = ({ id, period, description }) => {
   return (
     <div className={classes.history_container}>
       <p className={classes.history_period}>{period}</p>
@@ -18,9 +18,9 @@ const History = ({ period, description }) => {
           ))}
         </ul>
         {description.image && (
-          <div className={classes.work_container}>
+          <div>
             <div className={classes.history_image}>
-              <Image src={description.image} alt="image" layout="fill" />
+              <Image src={description.image} alt={`image-${id}`} quality={10} />
             </div>
             <a
               href={description.link}

@@ -15,10 +15,9 @@ const Guide = forwardRef(({ title, path, href, onClick }, ref) => {
       <div className={classes.guide_background_image}>
         <Image
           src={path}
-          alt={`${title.toLowerCase()} link`}
-          layout="fill"
-          // priority
+          alt={`${title.toLowerCase()}-link`}
           quality={10}
+          layout="fill"
         />
       </div>
     </a>

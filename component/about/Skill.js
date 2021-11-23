@@ -6,7 +6,9 @@ const Skill = ({ name, source }) => {
   return (
     <div className={classes.skill_align}>
       <div>
-        <Image src={source} alt={name} width={100} height={100} quality={10} />
+        <div className={classes.skill_image}>
+          <Image src={source} alt={name} quality={10} />
+        </div>
         <p className={classes.text_style}>{name}</p>
       </div>
     </div>
