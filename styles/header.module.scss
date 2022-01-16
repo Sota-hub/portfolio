@@ -30,6 +30,7 @@
 }
 
 .grid_items {
+  opacity: 0.3;
   text-align: center;
   padding: 0.5em;
   border-bottom: $border_style;
@@ -39,10 +40,15 @@
   &:last-child {
     padding-right: 0.5em;
   }
+  &:hover {
+    opacity: 1;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+  }
 }
 
 .active {
-  opacity: 0.3;
+  opacity: 1;
   animation: active_animation 0.8s forwards;
 }
 

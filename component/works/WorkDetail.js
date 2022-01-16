@@ -12,7 +12,18 @@ const WorkDetail = ({ data }) => {
       <div className="container">
         <div className={classes.detail_container}>
           <h2 className={classes.detail_title}>{data.title}</h2>
-          <p className={classes.detail_description}>{data.description}</p>
+          <a href={data.github} className={classes.detail_github}>
+            Go to GitHub pages
+          </a>
+          {data.description.map((desc, i) => (
+            <p className={classes.detail_description} key={`desc-${i}`}>
+              {desc}
+            </p>
+          ))}
+          <div className={classes.detail_space} />
+          <a href={data.link} target="blank" className={classes.detail_link}>
+            Visit App
+          </a>
           <div className={classes.detail_image_container}>
             {data.image?.map((img, index) => (
               <div key={`image-${index}`} className={classes.detail_image}>
@@ -21,7 +32,7 @@ const WorkDetail = ({ data }) => {
             ))}
           </div>
           <a href={data.link} target="blank" className={classes.detail_link}>
-            Visit
+            Visit App
           </a>
           <p className={classes.detail_language}>languages</p>
           <Language language={data.language} />

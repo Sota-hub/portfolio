@@ -6,6 +6,12 @@ $laptop_screen: 1024px;
 $hover_animation: opacity 0.3s ease-in-out;
 $border_style: 1px solid #000;
 
+@mixin align_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin guideList_basic_style {
   width: 15em;
   text-align: center;
@@ -23,15 +29,50 @@ $border_style: 1px solid #000;
   color: #fff;
 }
 
+.first_view_separate {
+  @media screen and (min-width: $laptop_screen) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 5em;
+  }
+}
+
+.first_view_right {
+  @include align_center();
+}
+
+.right_contents {
+  @media screen and (min-width: $laptop_screen) {
+    justify-content: left;
+  }
+}
+
 .first_view_container {
-  margin: 1em 0 4em;
+  margin: 1.5em 0 4em;
+  @media screen and (min-width: $laptop_screen) {
+    margin-top: 7em;
+  }
 }
 
 .fist_view_style {
+  @include align_center();
   text-align: center;
-  line-height: 2.5em;
+  line-height: 1.5em;
+  font-size: 28px;
   @media screen and (min-width: $laptop_screen) {
     font-size: 30px;
+  }
+}
+
+.fist_view_text {
+  width: 80%;
+  letter-spacing: 2px;
+  @media screen and (min-width: $tablet_screen) {
+    width: 60%;
+  }
+  @media screen and (min-width: $laptop_screen) {
+    font-size: 30px;
+    text-align: left;
   }
 }
 
@@ -43,16 +84,28 @@ $border_style: 1px solid #000;
 
 .first_view_icon {
   margin: 0 1em;
-  width: 3.5%;
+  width: 10%;
+  @media screen and (min-width: $tablet_screen) {
+    width: 6%;
+  }
+  @media screen and (min-width: $laptop_screen) {
+    width: 14%;
+  }
 }
 
 .first_view_resume {
   border: $border_style;
   padding: 1em;
-  width: 50%;
+  width: 40%;
   text-align: center;
   margin-bottom: 3em;
   cursor: pointer;
+  @media screen and (min-width: $tablet_screen) {
+    width: 25%;
+  }
+  @media screen and (min-width: $laptop_screen) {
+    width: 50%;
+  }
 }
 
 .guideList_container {
@@ -93,6 +146,9 @@ $border_style: 1px solid #000;
 
 .guide_title {
   @include decoration_on_image();
+  background-color: rgb(15, 15, 15);
+  color: #fff;
+  padding: 6px 0;
   position: absolute;
   top: 50%;
   left: 50%;
