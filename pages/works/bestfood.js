@@ -4,7 +4,7 @@ import WorkDetail from "../../component/works/WorkDetail";
 
 const data = {
   title: "BESTFOOD",
-  description: "this is a bestfood app",
+  description: ["this is a bestfood app", "create by myself"],
   image: [AboutMe, AboutMe],
   link: "https://poke-battle.netlify.app/",
   language: ["Next.js", "Node.js", "MySQL"],
