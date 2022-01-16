@@ -2,12 +2,13 @@ import AboutMe from "../../public/aboutMe.jpg";
 
 import Work from "./Work";
 import classes from "../../styles/works.module.scss";
+import PokemonImageBattle from "../../public/poke_battle.png";
 
 const works = [
   {
     id: 1,
     title: "Pokemon Battle",
-    image: AboutMe,
+    image: PokemonImageBattle,
     params: "/pokemon",
   },
   {

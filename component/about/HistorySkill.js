@@ -12,6 +12,7 @@ import Mongo from "../../public/mongodb.png";
 import MySQL from "../../public/mysql.png";
 
 import workPic from "../../public/aboutMe.jpg";
+import PokemonImageBattle from "../../public/poke_battle.png";
 
 import Skill from "./Skill";
 import History from "./History";
@@ -123,7 +124,7 @@ const histories = [
         "This app is able to play Pokemon on the browser. I created this app with a few people",
       points: ["Choose pokemon", "Decide move", "Change Pokemon", "Use Item"],
       // information for my work
-      image: workPic,
+      image: PokemonImageBattle,
       language: ["React", "Redux", "JS"],
       link: "https://poke-battle.netlify.app/",
     },

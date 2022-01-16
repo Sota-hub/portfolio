@@ -50,6 +50,10 @@
 .title_style {
   @include absolute_position(50%);
   @include decoration_on_image();
+  background-color: #fff;
+  padding: 6px 0;
+  width: 100%;
+  text-align: center;
   @media screen and (min-width: $laptop_screen) {
     font-size: 26px;
   }
