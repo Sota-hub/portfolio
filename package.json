@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^2.8.3",
-    "dotenv": "^10.0.0",
+    "dotenv": "^14.2.0",
     "next": "12.0.3",
     "nodemailer": "^6.7.1",
     "pdfjs-dist": "^2.6.347",

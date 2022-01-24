@@ -38,7 +38,7 @@ const Contact = () => {
         body: JSON.stringify(content),
       });
 
-      if (response.status === 400) {
+      if (!response.ok) {
         throw new Error("Something went wrong...");
       }
 

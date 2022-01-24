@@ -1,5 +1,5 @@
 const nodemailer = require("nodemailer");
-require("dotenv").config();
+require("dotenv").config({ path: "../../.env" });
 
 const host = process.env.MAIL_HOST;
 const port = process.env.MAIL_PORT;
@@ -28,7 +28,7 @@ const mailer = (req, res) => {
 
     transporter.sendMail(message, (err, info) => {
       if (err) {
-        console.log("Mail failed");
+        console.log(err);
         res.status(400).send(err);
       }
       if (!err) {
