@@ -1,5 +1,5 @@
 const nodemailer = require("nodemailer");
-require("dotenv").config({ path: "../../.env" });
+require("dotenv").config();
 
 const host = process.env.MAIL_HOST;
 const port = process.env.MAIL_PORT;
