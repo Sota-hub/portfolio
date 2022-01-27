@@ -34,7 +34,7 @@ const Header = () => {
               className={`${classes.grid_items} ${
                 (router.pathname === "/works" ||
                   router.pathname === "/works/pokemon" ||
-                  router.pathname === "/works/bestfood") &&
+                  router.pathname === "/works/bestdish") &&
                 classes.active
               }`}
             >

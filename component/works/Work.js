@@ -9,16 +9,10 @@ const Work = ({ title, image, params }) => {
       <div className={classes.container_for_align}>
         <h2 className={classes.title_style}>{title}</h2>
         <div className={classes.description_style}>
-          <Link href={`/works${params}`}>More Info</Link>
+          <Link href={`/works/${params}`}>More Info</Link>
         </div>
         <div className={classes.work_background_image}>
-          <Image
-            src={image}
-            alt={title}
-            layout="fill"
-            // priority
-            quality={10}
-          />
+          <Image src={image} alt={title} layout="fill" quality={10} />
         </div>
       </div>
     </div>

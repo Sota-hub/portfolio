@@ -1,23 +1,8 @@
-import AboutMe from "../../public/aboutMe.jpg";
-
 import Work from "./Work";
 import classes from "../../styles/works.module.scss";
-import PokemonImageBattle from "../../public/poke_battle.png";
 
-const works = [
-  {
-    id: 1,
-    title: "Pokemon Battle",
-    image: PokemonImageBattle,
-    params: "/pokemon",
-  },
-  {
-    id: 2,
-    title: "Meal Menu",
-    image: AboutMe,
-    params: "/bestfood",
-  },
-];
+import PokemonImageBattle from "../../public/poke_battle.png";
+import myMenu from "../../public/my-menu.png";
 
 const WorkList = () => {
   return (
@@ -27,14 +12,18 @@ const WorkList = () => {
           These are my works! Please take a look them.
         </h2>
         <div className={classes.WorkList_container}>
-          {works.map((work) => (
-            <Work
-              key={`work-${work.id}`}
-              title={work.title}
-              image={work.image}
-              params={work.params}
-            />
-          ))}
+          <Work
+            key="pokemon-battle"
+            title="Pokemon Battle"
+            image={PokemonImageBattle}
+            params="pokemon"
+          />
+          <Work
+            key="best-dish"
+            title="BEST DISH"
+            image={myMenu}
+            params="bestdish"
+          />
         </div>
       </div>
     </div>

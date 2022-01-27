@@ -12,7 +12,11 @@ const WorkDetail = ({ data }) => {
       <div className="container">
         <div className={classes.detail_container}>
           <h2 className={classes.detail_title}>{data.title}</h2>
-          <a href={data.github} className={classes.detail_github}>
+          <a
+            href={data.github}
+            target="blank"
+            className={classes.detail_github}
+          >
             Go to GitHub pages
           </a>
           {data.description.map((desc, i) => (
