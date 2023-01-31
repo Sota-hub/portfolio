@@ -17,24 +17,28 @@ const History = ({ id, period, description }) => {
             </li>
           ))}
         </ul>
-        {description.image && (
           <div>
+        {description.image && (
             <div className={classes.history_image}>
               <Image src={description.image} alt={`image-${id}`} quality={10} />
             </div>
-            <a
-              href={description.link}
-              target="blank"
-              className={classes.history_button}
-            >
+        )}
+        {description.link && (
+          <a
+          href={description.link}
+          target="blank"
+          className={classes.history_button}
+          >
               Visit
             </a>
-            <div className={classes.history_language}>
+        )}
+        {description.language && (
+          <div className={classes.history_language}>
               <p>Languages</p>
               <Language language={description.language} />
             </div>
-          </div>
         )}
+          </div>
       </div>
       <div className={classes.history_bottom}></div>
       <span className={classes.line_dot}></span>

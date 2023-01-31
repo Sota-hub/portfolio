@@ -15,10 +15,7 @@ const FirstView = () => {
         <div>
           <h1 className={classes.fist_view_style}>
             <p className={classes.fist_view_text}>
-              Hello! My name is Sota and I enjoy developing apps that is created
-              by React, Next.js and React Native. Especially, I&prime;m
-              interested in clean components management and SSG/ISR with
-              Next.js. What I&prime;m going to study are TypeScript and GraphQL.
+            Hello! My name is Sota and I'm a front-end developer with extensive knowledge of full-stack development. I worked as a full-stack developer for 5+ months and grew rapidly by learning new plenty of skills. I enjoy collaborating with peers and acquiring new technology for better products.
             </p>
           </h1>
         </div>
