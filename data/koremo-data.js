@@ -1,6 +1,11 @@
-// import PokemonImageChoose from "../public/poke_choose.png";
-// import PokemonImageCutin from "../public/poke_cutin.png";
-// import PokemonImageBattle from "../public/poke_battle.png";
+import Koremo from "../public/koremo.png";
+import Login from "../public/login.png";
+import Home from "../public/home-koremo.png";
+import FriendList from "../public/friend's-list.png";
+import FriendListDetail from "../public/friend's-list-detail.png";
+import List from "../public/list.png";
+import ListDetail from "../public/list-detail.png";
+import Account from "../public/account.png";
 
 const dataOfKoremo = {
   title: "Koremo",
@@ -9,7 +14,7 @@ const dataOfKoremo = {
     `when I develop the app, I chose the technologies which use in my work which contributed before. These are "TypeScript", "Next.js", "Node.js", "Apollo Graphql", "Typeorm", "MySQL" "Docker" and "lerna". In these technologies, I stopped using Docker due to that docker and lerna were a little bit incompatible and starting the frontend side app was slow in the virtual environment.`,
     "Through my development experience, I learned the structure of OAuth 2.0, how to operate the mono-repo application and the usefulness of docker in the multi-developer environment. Additionally, I am made aware that I need to write more efficient code like split by function and more reusable."
   ],
-  image: [],
+  image: [Koremo, Login, Home, FriendList, FriendListDetail, List, ListDetail, Account],
   link: "https://koremo-client.vercel.app",
   language: ["TypeScript", "Next.js", "Node.js", "Apollo Graphql", "Typeorm", "MySQL"],
   github: "https://github.com/Sota-hub/Koremo_dev",
